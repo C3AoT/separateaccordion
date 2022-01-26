@@ -30,7 +30,6 @@ export const testData = [
             begin: "04:22 PM, Feb 11",
             end: "06:57 PM, Feb 12",
         },
-        {id: 104,mthname: "February",mth: 1,day: 12,weekday:"Saturday",begin: "04:22 PM, Feb 11",end: "06:57 PM, Feb 12"},
         {id: 105,mthname: "February",mth: 1,day: 27,weekday:"Sunday",begin: "01:09 PM, Feb 26",end: "10:42 AM, Feb 27"},
         {id: 106,mthname: "March",mth: 2,day: 14,weekday:"Monday",begin: "12:51 PM, Mar 13",end: "02:35 PM, Mar 14"},
         {id: 107,mthname: "March",mth: 2,day: 28,weekday:"Monday",begin: "08:34 PM, Mar 27",end: "06:45 PM, Mar 28"},
@@ -47,6 +46,40 @@ export const testData = [
   {
     id: 2,
     event: "Pournami",
+    calendar: 
+    [
+        {
+            id: 101,
+            mthname: "January",
+            mth: 0,
+            day: 13,
+            weekday: "Thursday",
+            begin: "07:19pm, Jan 12",
+            end: "10:00pm, Jan 13",
+        },
+        {
+            id: 102,
+            mthname: "January",
+            mth: 0,
+            day: 28,
+            weekday:"Friday",
+            begin: "04:46 AM, Jan 28",
+            end: "02:05 AM, Jan 29",
+        },
+        {
+            id: 103,
+            mthname: "February",
+            mth: 1,
+            day: 12,
+            weekday:"Saturday",
+            begin: "04:22 PM, Feb 11",
+            end: "06:57 PM, Feb 12",
+        }  
+    ]
+  },
+  {
+    id: 2,
+    event: "Sivarathiri",
     calendar: 
     [
         {

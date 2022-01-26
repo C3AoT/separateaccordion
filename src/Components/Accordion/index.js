@@ -1,6 +1,6 @@
 import React, {useState, useRef} from 'react';
-import DisplayByMth from '../DisplayByMth';
-import '../styles.css';
+import DisplayByMth from './DisplayByMth';
+import './styles.css';
 import { BsFillArrowDownCircleFill as FillAD} from "react-icons/bs";
 //import DisplayByMth from './Components/DisplayByMth';
 
@@ -10,7 +10,7 @@ const Accordion = () => {
     const[isOpenPanel3, setIsOpenPanel3] = useState(true);
     const month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
     let currMth = month[new Date().getMonth()];
-    let currMthNum = new Date().getMonth();
+    let currMthNum = new Date().getMonth()+1;
 
 
     const panel1 = useRef();
@@ -21,11 +21,7 @@ const Accordion = () => {
     const toggle = (panelid) => {
 
            if(panelid === panel1){
-            //    let panelid = panelid.strRight(0);
-            //    console.log(panelid);
-            //    let setIsOpenPanel = "setIsOpenPanel" + panelid;
-            //    let isOpenPanel = "isOpenPanel" + panelid;
-            setIsOpenPanel1(!isOpenPanel1)
+              setIsOpenPanel1(!isOpenPanel1)
            }else if(panelid === panel2){
                setIsOpenPanel2(!isOpenPanel2)
            }else
@@ -73,7 +69,7 @@ Please take note that no prayers will be conducted on Ekadasi Saturdays.
           <div id="collapse3" className={isOpenPanel3 ? "accordion-collapse show" : "accordion-collapse"}>
             <div className="accordion-body">
                <DisplayByMth currMth={currMth} currMthNum={currMthNum}/>
-               <p>Dates for the full year is available</p>
+               <p>Dates for the full year is available in the Menu</p>
             </div>
           </div>
         </div>

@@ -10,7 +10,7 @@ const Accordion = () => {
     const[isOpenPanel3, setIsOpenPanel3] = useState(true);
     const month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
     let currMth = month[new Date().getMonth()];
-    let currMthNum = new Date().getMonth()+1;
+    let currMthNum = new Date().getMonth();
 
 
     const panel1 = useRef();

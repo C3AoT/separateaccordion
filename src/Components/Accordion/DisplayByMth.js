@@ -1,8 +1,8 @@
-import {testData} from '../Data/testData';
+import {KeyDatesData} from '../Data/KeyDatesData';
 import './styles.css'
 
 const DisplayByMth = ({currMth, currMthNum}) => {
-  const data = testData;
+  const data = KeyDatesData;
 
    
 
